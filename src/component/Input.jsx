@@ -1,12 +1,8 @@
 import React, {useState} from 'react';
 
-const Input = (currencyValue) => {
-    // const [amount, setAmount] = useState('1');
-
-    // setAmount(currencyValue)
-    console.log(currencyValue)
+const Input = (props) => {
     return (
-        <input type="number" value={currencyValue}/>
+        <input type="number" value={props.amount} onChange={e => props.onChangeCurrencyAmount(e)}/>
     );
 };
 

@@ -1,3 +1,4 @@
+import Converter from './component/Converter';
 
 function App() {
   return (

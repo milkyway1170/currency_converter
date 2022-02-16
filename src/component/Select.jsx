@@ -11,7 +11,7 @@ const Select = (props) => {
     );
 
     return (
-        <select onChange={e => props.onChangeCurrencyName(e)}>
+        <select value= {props.currencyName} onChange={e => props.onChangeCurrencyName(e)}>
             {CurrencyNameList}
         </select>
     );
