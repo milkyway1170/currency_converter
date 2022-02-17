@@ -1,155 +1,154 @@
 * {
-    position  : relative;
-    margin    : 0;
-    padding   : 0;
-    box-sizing: border-box;
+  position  : relative;
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
 }
 
-#root{
-    height: 100vh;;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#root {
+  height         : 100vh;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
 }
 
 body {
-    background: Gainsboro;
+  background: Gainsboro;
 }
 
 .converte-container {
-    width         : 800px;
-    height        : 600px;
-    background    : #fff;
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;
+  width         : 800px;
+  height        : 600px;
+  background    : #fff;
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
 }
 
 .select-container,
 .input-container {
-    display       : flex;
-    flex-direction: row;
-    display       : flex;
-    align-items   : center;
+  display       : flex;
+  flex-direction: row;
+  display       : flex;
+  align-items   : center;
 }
 
 .select-container {
-    margin-top: 50px;
-    margin-right: 151px;
+  margin-top  : 50px;
+  margin-right: 151px;
 }
 
 .input-container {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 
 /*********TEXT**********/
 .container-name {
-    margin-top: 100px;
-    height    : 24px;
-    width     : 100%;
+  margin-top: 100px;
+  height    : 24px;
+  width     : 100%;
 
-    font-family: Roboto;
-    font-style : normal;
-    font-weight: bold;
-    font-size  : 24px;
-    line-height: 28px;
-    text-align : center;
-    color      : #000000;
+  font-family: Roboto;
+  font-style : normal;
+  font-weight: bold;
+  font-size  : 24px;
+  line-height: 28px;
+  text-align : center;
+  color      : #000000;
 }
 
 .container-text {
-    font-family: Roboto;
-    font-style : normal;
-    font-weight: normal;
-    font-size  : 20px;
-    line-height: 23px;
-    text-align : center;
-    color      : #000000;
+  font-family: Roboto;
+  font-style : normal;
+  font-weight: normal;
+  font-size  : 20px;
+  line-height: 23px;
+  text-align : center;
+  color      : #000000;
 }
 
 .currency-btn {
-    margin-top     : 50px;
-    font-family    : Roboto;
-    font-style     : normal;
-    font-weight    : normal;
-    font-size      : 20px;
-    line-height    : 23px;
-    text-align     : center;
-    text-decoration: underline;
+  margin-top     : 50px;
+  font-family    : Roboto;
+  font-style     : normal;
+  font-weight    : normal;
+  font-size      : 20px;
+  line-height    : 23px;
+  text-align     : center;
+  text-decoration: underline;
 
-    color     : rgba(0, 0, 0, 0.37);
-    border    : none;
-    background: #fff;
+  color     : rgba(0, 0, 0, 0.37);
+  border    : none;
+  background: #fff;
 }
 
 /******SELECT*******/
 .currency-select {
-    display            : block;
-    width              : 150px;
-    height             : 35px;
-    font-family        : Roboto;
-    font-style         : normal;
-    font-weight        : normal;
-    font-size          : 20px;
-    line-height        : 23px;
-    color              : #000000;
-    padding            : 5px 16px;
-    margin             : 0 10px;
-    border             : 1px solid #000;
-    /*   */
-    -moz-appearance    : none;
-    -webkit-appearance : none;
-    appearance         : none;
-    background-color   : #fff;
-    background-image   : url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
-    background-repeat  : no-repeat, repeat;
-    background-position: right .7em top 50%, 0 0;
-    background-size    : .65em auto, 100%;
+  display            : block;
+  width              : 150px;
+  height             : 35px;
+  font-family        : Roboto;
+  font-style         : normal;
+  font-weight        : normal;
+  font-size          : 20px;
+  line-height        : 23px;
+  color              : #000000;
+  padding            : 5px 16px;
+  margin             : 0 10px;
+  border             : 1px solid #000;
+  -moz-appearance    : none;
+  -webkit-appearance : none;
+  appearance         : none;
+  background-color   : #fff;
+  background-image   : url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  background-repeat  : no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size    : .65em auto, 100%;
 }
 
 .currency-select::-ms-expand {
-    display: none;
+  display: none;
 }
 
 .currency-select:hover {
-    border-color: #888;
+  border-color: #888;
 }
 
 .currency-select:focus {
-    border-color: #aaa;
-    box-shadow  : 0 0 1px 3px rgba(59, 153, 252, .7);
-    box-shadow  : 0 0 0 3px -moz-mac-focusring;
-    color       : #222;
-    outline     : none;
+  border-color: #aaa;
+  box-shadow  : 0 0 1px 3px rgba(59, 153, 252, .7);
+  box-shadow  : 0 0 0 3px -moz-mac-focusring;
+  color       : #222;
+  outline     : none;
 }
 
 .currency-select option {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 *[dir="rtl"] .currency-select,
 :root:lang(ar) .currency-select,
 :root:lang(iw) .currency-select {
-    background-position: left .7em top 50%, 0 0;
-    padding            : .6em .8em .5em 1.4em;
+  background-position: left .7em top 50%, 0 0;
+  padding            : .6em .8em .5em 1.4em;
 }
 
 /************INPUT**************/
 .currency-input {
-    display         : block;
-    width           : 150px;
-    height          : 35px;
-    padding         : 5px 15px;
-    margin          : 0 10px;
-    font-family     : Roboto;
-    font-style      : normal;
-    font-weight     : normal;
-    font-size       : 20px;
-    line-height     : 23px;
-    color           : #212529;
-    background-color: #fff;
-    background-clip : padding-box;
-    border          : 1px solid #000;
-    transition      : border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  display         : block;
+  width           : 150px;
+  height          : 35px;
+  padding         : 5px 15px;
+  margin          : 0 10px;
+  font-family     : Roboto;
+  font-style      : normal;
+  font-weight     : normal;
+  font-size       : 20px;
+  line-height     : 23px;
+  color           : #212529;
+  background-color: #fff;
+  background-clip : padding-box;
+  border          : 1px solid #000;
+  transition      : border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
