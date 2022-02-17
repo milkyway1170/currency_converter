@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Select from './Select'
 import Input from './Input'
 import Button from './Button'
+import './Converter.css';
 
 const Converter = () => {
     const [currencyRate, setCurrencyRate] = useState([])
@@ -57,25 +58,33 @@ const Converter = () => {
 
     
     return (
-    <div className="App">
-        <Select 
-            currencyRate = {currencyRate}
-            onChangeCurrencyName={handleChangeFromCurrencyName}
-            currencyName = {fromCurrencyName}
-        />
-        <Select
-            currencyRate = {currencyRate}
-            onChangeCurrencyName={handleChangeToCurrencyName}
-            currencyName = {toCurrencyName}
-        />
-        <Input 
-            amount = {fromAmount}
-            onChangeCurrencyAmount={handleChangeFromCurrencyAmount}
-        />
-        <Input 
-            amount = {toAmount}
-            onChangeCurrencyAmount={handleChangeToCurrencyAmount}
-        />
+    <div className="converte-container">
+        <h1 className="container-name">Конвертер валют</h1>
+        <div className="select-container">
+            <p className="container-text">Вы переводите из</p>
+            <Select 
+                currencyRate = {currencyRate}
+                onChangeCurrencyName={handleChangeFromCurrencyName}
+                currencyName = {fromCurrencyName}
+            />
+            <p className="container-text">в</p>
+            <Select
+                currencyRate = {currencyRate}
+                onChangeCurrencyName={handleChangeToCurrencyName}
+                currencyName = {toCurrencyName}
+            />
+        </div>
+        <div className="input-container">
+            <Input 
+                amount = {fromAmount}
+                onChangeCurrencyAmount={handleChangeFromCurrencyAmount}
+            />
+            <p className="container-text">=</p>
+            <Input 
+                amount = {toAmount}
+                onChangeCurrencyAmount={handleChangeToCurrencyAmount}
+            />
+        </div>
         <Button onChangeClick = {handleChangeSwap}/>
     </div>
     );
