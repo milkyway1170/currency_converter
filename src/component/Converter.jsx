@@ -15,7 +15,9 @@ const Converter = () => {
     fetch(process.env.REACT_APP_API_URL+process.env.REACT_APP_API_KEY).then((response) => {
       return response.json();
     })
-    .catch(error => alert(error.message))
+    .catch((data) => {
+      setCurrencyRate(data.rates['']);
+    })
     .then((data) => {
       setCurrencyRate(data.rates);
     });
