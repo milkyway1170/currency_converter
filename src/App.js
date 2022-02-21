@@ -1,9 +1,8 @@
+import Converter from './component/Converter';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Converter/>
   );
 }
 
